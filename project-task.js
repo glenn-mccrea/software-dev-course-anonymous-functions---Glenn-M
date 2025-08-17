@@ -94,7 +94,8 @@ allDone = todos.map((array) => {
   }
 });
 //log it
-console.log(`Convert to True: ${allDone}`);
+console.log(`Convert to True: ${allDone}
+  `);
 
 // My check after to make sure it did what i thought it did
 // for (let i = 0; i < todos.length; i++) {
