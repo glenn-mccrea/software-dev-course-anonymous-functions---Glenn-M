@@ -88,7 +88,7 @@ function completedTasks(array) {
 // the actual anonymous function i came up with
 allDone = todos.map((array) => {
   if (array.completed === false) {
-    return (array.completed = true);
+    return (array.completedNew = true);
   } else {
     return array.completed;
   }
@@ -111,13 +111,6 @@ console.log(`Convert to True: ${allDone}`);
   */
 console.log("Combined filters: ");
 
-todos = [
-  { task: "Wash the dishes", completed: false, priority: 3 },
-  { task: "Write a blog post", completed: true, priority: 1 },
-  { task: "Buy groceries", completed: false, priority: 2 },
-  { task: "Study JavaScript", completed: true, priority: 1 },
-  { task: "Walk the dog", completed: false, priority: 2 },
-];
 const combinedFilters = todos
   .filter((todos) => todos.completed === false)
   .sort((a, b) => a.priority - b.priority);
